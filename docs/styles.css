@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    
+}
+html {
+    height: 800px;
+}
+header {
+    height: 90px;
+    border: 1px solid black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+.header-left {
+    margin-left: ;
+}
+.header-right {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+header span {
+    color: black;
+    font-family: "Gaegu";
+    font-size: 28px;
+}
+.homepage-icon-container {
+    width: 120px;
+    position: relative;
+}
+.homepage-icon-container::after {
+    content: "Quinne English";
+    text-wrap: nowrap;
+    color: black;
+    font-family: "Gaegu";
+    font-size: 28px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -15px;
+}
+.homepage-icon{
+    width: 100%;
+    
+}
+
+#nav-menu{
+    list-style: none;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.search{
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+#input{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px 20px;
+    font-size: 24px;
+    align-items: center;
+ 
+    border-radius: 10px;
+    box-shadow: 0 8px 8px -4px lightblue;
+    transition: all 0.3s ease;
+    outline: none;
+
+}
+#input:focus{
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+
+}
+#word-list{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: white;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 8px 8px -4px lightblue;
+    max-height: 200px;
+    overflow-y: auto;
+    
+
+}
+#word-list li{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px ;
+}
+#word-list li:hover{
+    background-color: #f1f1f1;
+}
+
+section {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+footer{
+    border: 1px solid;
+    width: 100% ;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    
+    
+}
+
+#feedback-box{
+    padding: 6px 12px;
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 4px;
+    font-size: 13px;
+    color: rgb(247, 248, 248);
+    height: 46px;
+    appearance: none;
+    transition: border 0.15s ease 0s;
+    :focus{
+        outline: none;
+        box-shadow: none;
+        border-color: rgb(100, 153, 255);
+    }
+    overflow-y: auto;
+    
+}
+
+
+.credits{
+    font-size: 15px;
+
+}
+
+
+
+#Feedback-response{
+    inline-size: 50px;
+    overflow-wrap: break-word;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
